@@ -1,0 +1,44 @@
+/* Brand Colors */
+:root {
+  --leather-brown: #8b4513;
+  --leather-dark: #4e2a0a;
+  --leather-tan: #d2b48c;
+  --leather-gold: #f4a261;
+}
+
+body {
+  background-color: #faf7f2;
+}
+
+/* Buttons */
+.btn-leather {
+  background-color: var(--leather-brown);
+  color: #fff;
+  border: none;
+}
+
+.btn-leather:hover {
+  background-color: var(--leather-dark);
+  color: #fff;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--leather-dark) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: var(--leather-dark);
+}
