@@ -1,0 +1,200 @@
+/* ================================
+   GLOBAL RESET & BASE
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #faf7f2;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+/* ================================
+   BRAND COLORS
+================================ */
+:root {
+  --leather-dark: #3b1f0e;
+  --leather-brown: #8b4513;
+  --leather-tan: #d2b48c;
+  --leather-gold: #f4a261;
+  --soft-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+  background: linear-gradient(135deg, #3b1f0e, #6a3516) !important;
+  padding: 14px 0;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+.navbar .btn {
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: var(--leather-dark);
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.btn-leather {
+  background: linear-gradient(135deg, var(--leather-brown), var(--leather-gold));
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-leather:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--soft-shadow);
+  color: #fff;
+}
+
+.btn-outline-dark {
+  border-radius: 30px;
+}
+
+/* ================================
+   CARDS
+================================ */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--soft-shadow);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* ================================
+   PRODUCT IMAGES
+================================ */
+.card-img-top {
+  height: 230px;
+  object-fit: cover;
+}
+
+/* ================================
+   PRODUCT DETAILS PAGE
+================================ */
+.product-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--leather-brown);
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+}
+
+.qty-box button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* ================================
+   FORMS
+================================ */
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  border-color: var(--leather-brown);
+  box-shadow: none;
+}
+
+/* ================================
+   CART & CHECKOUT
+================================ */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item h6 {
+  margin-bottom: 5px;
+}
+
+.total-box {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* ================================
+   DASHBOARDS
+================================ */
+.dashboard-card {
+  padding: 25px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: var(--soft-shadow);
+  text-align: center;
+}
+
+.dashboard-card h4 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+/* ================================
+   TRACK ORDER
+================================ */
+.alert {
+  border-radius: 14px;
+  font-size: 0.95rem;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .navbar .btn {
+    margin-bottom: 6px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}
